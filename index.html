@@ -2515,9 +2515,14 @@ var qrcode = function() {
                 font-size="22" fill="#f3e3c2">安</text>
         </g>
 
-        <!-- 二维码开窗 -->
+        <!-- 题注（标题正下方，圆盘浅色区内） -->
+        <text x="300" y="172" text-anchor="middle"
+              font-family="'Noto Serif SC',serif"
+              font-size="14" fill="#8a7550" letter-spacing="3">临时停靠　敬请谅解</text>
+
+        <!-- 二维码开窗（直角方形白底，与二维码形状一致） -->
         <g>
-          <rect x="172" y="182" width="256" height="256" rx="20" fill="#fffdf6" stroke="#b89b5e" stroke-width="2.5"/>
+          <rect x="172" y="182" width="256" height="256" rx="0" fill="#fffdf6" stroke="#b89b5e" stroke-width="2.5"/>
           <!-- 四角角花 -->
           <g fill="none" stroke="#b3402f" stroke-width="2.5" stroke-linecap="round">
             <path d="M186 208 V194 H200"/>
@@ -2532,16 +2537,16 @@ var qrcode = function() {
           </foreignObject>
         </g>
 
-        <!-- 二维码下方文字 -->
-        <text x="300" y="486" text-anchor="middle"
+        <!-- 二维码下方提示文字（均在浅色圆盘 r=210 范围内） -->
+        <text x="300" y="464" text-anchor="middle"
               font-family="'ZCOOL XiaoWei','STKaiti',serif"
-              font-size="30" fill="#3a2f22" letter-spacing="8">扫码联系车主</text>
-        <text x="300" y="522" text-anchor="middle"
-              font-family="'Noto Serif SC',serif" font-size="17" fill="#8a7550" letter-spacing="6">临时停靠　敬请谅解</text>
+              font-size="25" fill="#3a2f22" letter-spacing="5">扫码联系车主</text>
+        <text x="300" y="491" text-anchor="middle"
+              font-family="'Noto Serif SC',serif" font-size="14.5" fill="#8c241d" letter-spacing="1">拨打电话 · 发送短信</text>
 
-        <!-- 祥云装饰 -->
-        <use href="#cloud" transform="translate(96,520) scale(.72)"/>
-        <use href="#cloud" transform="translate(504,520) scale(-.72,.72)"/>
+        <!-- 祥云装饰（二维码左右两侧，位于浅色圆盘内） -->
+        <use href="#cloud" transform="translate(118,282) scale(.7)"/>
+        <use href="#cloud" transform="translate(482,282) scale(-.7,.7)"/>
       </svg>
     </div>
   </div>
