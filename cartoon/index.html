@@ -3,28 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>瑞气盈门 · 古典风扫码挪车牌</title>
+<title>卡通扫码挪车牌 · 可爱车车版</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;600;700;900&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
-<script>
-//---------------------------------------------------------------------
-//
-// QR Code Generator for JavaScript
-//
-// Copyright (c) 2009 Kazuhiko Arase
-//
-// URL: http://www.d-project.com/
-//
-// Licensed under the MIT license:
-//  http://www.opensource.org/licenses/mit-license.php
-//
-// The word 'QR Code' is registered trademark of
-// DENSO WAVE INCORPORATED
-//  http://www.denso-wave.com/qrcode/faqpatent-e.html
-//
-//---------------------------------------------------------------------
-
-var qrcode = function() {
+<link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet">
+<script>var qrcode = function() {
 
   //---------------------------------------------------------------------
   // qrcode
@@ -2303,558 +2285,536 @@ var qrcode = function() {
   }
 }(function () {
     return qrcode;
-}));
-
-</script>
+}));</script>
 <style>
-  :root{
-    --paper:#f4ead2;        /* 宣纸 */
-    --paper-deep:#ece0c2;
-    --cinnabar:#a3322a;     /* 朱砂 */
-    --cinnabar-deep:#7c221c;
-    --ink:#2c2620;          /* 墨 */
-    --gold:#c2a05a;         /* 鎏金 */
-    --gold-deep:#9a7d3e;
-    --seal:#b03a2e;
-  }
   *{margin:0;padding:0;box-sizing:border-box;}
-  html,body{height:100%;}
   body{
-    font-family:"Noto Serif SC","Songti SC","STSong",serif;
-    background:
-      radial-gradient(ellipse at 30% 0%, #2e261d 0%, #1c1712 55%, #14100c 100%);
-    color:var(--ink);
-    min-height:100vh;
+    font-family:"Noto Sans SC","Microsoft YaHei",sans-serif;
+    background:linear-gradient(160deg,#f6e7cb 0%,#efdcbb 45%,#e7d0a6 100%);
+    min-height:100vh;color:#333;
   }
-
-  /* ============ 工作台 ============ */
-  .studio{display:flex;gap:48px;align-items:flex-start;justify-content:center;flex-wrap:wrap;padding:48px 24px 80px;}
-  .stage{position:relative;}
-  .plate-shadow{
-    width:600px;height:600px;max-width:92vw;max-height:92vw;
-    filter:drop-shadow(0 30px 50px rgba(0,0,0,.65));
+  .studio{display:flex;gap:40px;align-items:flex-start;justify-content:center;flex-wrap:wrap;padding:40px 20px 70px;}
+  .art-wrap{
+    background:#fff;border-radius:28px;padding:18px;
+    box-shadow:0 24px 60px rgba(120,85,45,.25), 0 4px 0 #ddc6a0;
   }
-  .plate-svg{width:100%;height:100%;display:block;}
-
-  /* 控制面板 */
+  #art{display:block;width:min(64vw,680px);height:auto;border-radius:18px;}
   .panel{
-    width:360px;max-width:92vw;
-    background:linear-gradient(180deg,#f7f0dd 0%,#efe4c8 100%);
-    border:1px solid var(--gold);
-    border-radius:14px;
-    padding:30px 28px 26px;
-    box-shadow:0 24px 60px rgba(0,0,0,.5), inset 0 0 0 4px rgba(194,160,90,.18);
-    position:relative;
+    width:350px;max-width:92vw;background:#fff;border-radius:24px;padding:28px 26px 24px;
+    box-shadow:0 24px 60px rgba(120,85,45,.22), 0 4px 0 #e7d6b8;
   }
-  .panel::before{
-    content:"";position:absolute;inset:7px;border:1px solid rgba(154,125,62,.55);border-radius:9px;pointer-events:none;
-  }
-  .panel h1{
-    font-family:"Ma Shan Zheng","STKaiti","KaiTi",serif;
-    font-size:30px;color:var(--cinnabar-deep);text-align:center;font-weight:400;
-    letter-spacing:6px;
-  }
-  .panel .sub{text-align:center;color:#7a6a4c;font-size:12.5px;letter-spacing:4px;margin:6px 0 22px;}
-  .field{margin-bottom:18px;}
-  .field label{display:block;font-size:13.5px;color:#5d4e34;letter-spacing:2px;margin-bottom:7px;font-weight:600;}
+  .panel h1{font-family:"ZCOOL KuaiLe",sans-serif;font-size:27px;color:#8a5a35;text-align:center;letter-spacing:2px;}
+  .panel .sub{text-align:center;color:#a98a5f;font-size:12.5px;letter-spacing:3px;margin:6px 0 22px;}
+  .field{margin-bottom:17px;}
+  .field label{display:block;font-size:13.5px;color:#5c4a36;font-weight:700;margin-bottom:7px;}
   .field input,.field textarea{
-    width:100%;padding:11px 13px;
-    border:1px solid #c8b588;border-radius:8px;
-    background:#fdf8ec;color:var(--ink);
-    font-family:inherit;font-size:14px;letter-spacing:1px;
-    outline:none;transition:border-color .2s,box-shadow .2s;
+    width:100%;padding:11px 13px;border:2.5px solid #e2d0ad;border-radius:14px;
+    font-family:inherit;font-size:14px;color:#333;outline:none;transition:border-color .2s,box-shadow .2s;background:#fdfbf6;
   }
-  .field input:focus,.field textarea:focus{border-color:var(--cinnabar);box-shadow:0 0 0 3px rgba(163,50,42,.12);}
-  .field textarea{resize:vertical;min-height:58px;line-height:1.6;}
-  .hint{font-size:11.5px;color:#9a875f;margin-top:5px;line-height:1.6;}
-  .btn-row{display:flex;gap:10px;margin-top:22px;}
+  .field input:focus,.field textarea:focus{border-color:#b08968;box-shadow:0 0 0 4px rgba(176,137,104,.2);}
+  .field textarea{resize:vertical;min-height:60px;line-height:1.6;}
+  .hint{font-size:11.5px;color:#ad9874;margin-top:5px;line-height:1.7;}
   .btn{
-    flex:1;cursor:pointer;text-align:center;
-    padding:12px 0;border-radius:9px;font-size:15px;letter-spacing:3px;
-    font-family:inherit;font-weight:700;
-    border:1px solid transparent;transition:transform .15s,box-shadow .15s,background .2s;
+    width:100%;padding:14px 0;border-radius:16px;font-size:16px;letter-spacing:2px;font-weight:700;
+    font-family:inherit;cursor:pointer;border:none;margin-bottom:12px;transition:transform .12s,box-shadow .15s;
   }
-  .btn:active{transform:translateY(1px);}
-  .btn-primary{background:linear-gradient(180deg,#b3402f,#8f2922);color:#fbeeda;box-shadow:0 6px 16px rgba(140,35,28,.35);}
-  .btn-primary:hover{background:linear-gradient(180deg,#c04a37,#9c2f27);}
-  .btn-ghost{background:transparent;color:var(--cinnabar-deep);border-color:#b89b5e;}
-  .btn-ghost:hover{background:rgba(163,50,42,.07);}
-  .deployment{
-    margin-top:20px;padding:12px 14px;border-radius:8px;
-    background:rgba(163,50,42,.07);border:1px dashed #c2a05a;
-    font-size:12px;line-height:1.8;color:#6d5c3f;
-  }
-  .deployment b{color:var(--cinnabar-deep);}
+  .btn:active{transform:translateY(2px);}
+  .btn-primary{background:linear-gradient(180deg,#c89356,#a9733a);color:#fff;box-shadow:0 8px 0 #835a2b,0 12px 20px rgba(131,90,43,.3);}
+  .btn-primary:active{box-shadow:0 3px 0 #835a2b;}
+  .btn-blue{background:linear-gradient(180deg,#bd9573,#8a5a35);color:#fff;box-shadow:0 8px 0 #6b4423,0 12px 20px rgba(107,68,35,.28);}
+  .btn-blue:active{box-shadow:0 3px 0 #6b4423;}
+  .tip-box{margin-top:6px;padding:13px 15px;border-radius:14px;background:#faf1e0;border:2px dashed #d9c19a;font-size:12px;line-height:1.85;color:#7a6342;}
+  .tip-box b{color:#8a5a35;}
 
-  /* ============ 扫码落地页（手机视图） ============ */
+  /* 落地页 */
   .landing{display:none;min-height:100vh;padding:40px 16px;align-items:center;justify-content:center;}
-  .phone-card{
-    width:380px;max-width:100%;
-    background:linear-gradient(180deg,#f8f1dd,#efe3c4);
-    border-radius:22px;border:1px solid var(--gold);
-    box-shadow:0 30px 70px rgba(0,0,0,.6), inset 0 0 0 5px rgba(194,160,90,.15);
-    padding:38px 30px 32px;text-align:center;position:relative;overflow:hidden;
+  .l-card{
+    width:380px;max-width:100%;background:#fff;border-radius:30px;padding:40px 30px 32px;text-align:center;
+    box-shadow:0 30px 70px rgba(120,85,45,.35);position:relative;overflow:hidden;
   }
-  .phone-card::before{content:"";position:absolute;inset:8px;border:1px solid rgba(154,125,62,.5);border-radius:16px;pointer-events:none;}
-  .landing-seal{
-    width:74px;height:74px;margin:4px auto 14px;border-radius:10px;
-    background:linear-gradient(145deg,#b8402f,#8e2620);
-    display:flex;align-items:center;justify-content:center;
-    font-family:"Ma Shan Zheng",serif;font-size:34px;color:#f6e7c8;
-    letter-spacing:2px;line-height:1.05;
-    box-shadow:0 8px 20px rgba(140,35,28,.4), inset 0 0 0 2px rgba(246,231,200,.35);
-    transform:rotate(-4deg);
+  .l-card::before{content:"";position:absolute;top:0;left:0;right:0;height:150px;background:linear-gradient(180deg,#f0dcb8,#fbf3e3);z-index:0;}
+  .l-inner{position:relative;z-index:1;}
+  .l-car{margin:6px auto 8px;width:150px;height:96px;}
+  .l-title{font-family:"ZCOOL KuaiLe",sans-serif;font-size:40px;color:#8a5a35;margin-top:8px;}
+  .l-desc{font-size:14px;color:#8a7a60;margin:12px 0 6px;letter-spacing:1px;}
+  .l-num{font-size:24px;font-weight:900;color:#a06a34;letter-spacing:3px;margin-bottom:28px;}
+  .l-btn{
+    display:flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;
+    width:100%;padding:16px;border-radius:18px;font-size:19px;font-weight:900;font-family:inherit;margin-bottom:14px;
   }
-  .landing-title{font-family:"Ma Shan Zheng","STKaiti",serif;font-size:38px;color:var(--cinnabar-deep);letter-spacing:8px;}
-  .landing-desc{font-size:14px;color:#6f5f42;letter-spacing:3px;margin:12px 0 30px;line-height:1.9;}
-  .landing-desc .phone-num{font-size:22px;letter-spacing:4px;color:var(--ink);font-weight:700;display:block;margin-top:6px;}
-  .action-btn{
-    display:flex;align-items:center;justify-content:center;gap:10px;
-    width:100%;padding:16px;border-radius:12px;text-decoration:none;
-    font-size:19px;letter-spacing:5px;font-weight:700;font-family:inherit;
-    margin-bottom:14px;transition:transform .15s,box-shadow .15s;
-  }
-  .action-btn:active{transform:scale(.98);}
-  .action-call{background:linear-gradient(180deg,#b3402f,#8f2922);color:#fbeeda;box-shadow:0 10px 24px rgba(140,35,28,.4);}
-  .action-sms{background:linear-gradient(180deg,#fbf4e2,#f0e3c2);color:var(--cinnabar-deep);border:1.5px solid #b89b5e;box-shadow:0 8px 18px rgba(90,70,35,.18);}
-  .action-btn svg{width:24px;height:24px;flex:none;}
-  .landing-foot{margin-top:18px;font-size:11.5px;color:#9a875f;letter-spacing:3px;}
-
-  /* 模拟扫码弹层 */
-  .modal-mask{
-    display:none;position:fixed;inset:0;z-index:50;
-    background:rgba(12,9,6,.72);backdrop-filter:blur(4px);
-    align-items:center;justify-content:center;padding:24px;
-  }
-  .modal-mask.show{display:flex;}
-  .phone-frame{
-    width:396px;max-width:100%;border-radius:40px;padding:14px;
-    background:#221c15;border:2px solid #4a3d29;
-    box-shadow:0 40px 90px rgba(0,0,0,.7);position:relative;
-  }
-  .phone-frame::before{content:"";position:absolute;top:22px;left:50%;transform:translateX(-50%);width:90px;height:20px;background:#221c15;border-radius:0 0 14px 14px;z-index:2;}
-  .phone-screen{border-radius:28px;overflow:hidden;background:#e9dcc0;max-height:80vh;overflow-y:auto;}
-  .modal-close{
-    position:absolute;top:-14px;right:-10px;width:38px;height:38px;border-radius:50%;
-    background:var(--cinnabar);color:#fbeeda;border:2px solid var(--gold);
-    font-size:18px;cursor:pointer;z-index:3;font-family:inherit;
-  }
-  .modal-tip{text-align:center;color:#cbb98e;font-size:13px;letter-spacing:3px;margin-top:16px;}
-
-  @media print{
-    body{background:#fff;}
-    .studio{padding:0;gap:0;}
-    .panel,.stage .no-print{display:none !important;}
-    .plate-shadow{width:100vw;height:100vw;max-width:100vh;max-height:100vh;filter:none;}
-  }
+  .l-call{background:linear-gradient(180deg,#c89356,#a9733a);color:#fff;box-shadow:0 6px 0 #835a2b;}
+  .l-sms{background:linear-gradient(180deg,#bd9573,#8a5a35);color:#fff;box-shadow:0 6px 0 #6b4423;}
+  .l-btn svg{width:23px;height:23px;}
+  .l-foot{margin-top:14px;font-size:12px;color:#b29c78;letter-spacing:3px;}
+  .l-prv{display:none;align-items:center;justify-content:center;gap:6px;font-size:12px;color:#8a7a60;background:#faf1e0;border:1.5px dashed #d9c19a;border-radius:12px;padding:8px 10px;margin:-16px 0 24px;}
 </style>
 </head>
 <body>
 
-<!-- ================= 设计工作台 ================= -->
+<!-- ============ 制作工作台 ============ -->
 <div class="studio" id="studio">
-
-  <!-- 圆形挪车牌 -->
-  <div class="stage">
-    <div class="plate-shadow">
-      <svg class="plate-svg" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <radialGradient id="discGrad" cx="50%" cy="42%" r="62%">
-            <stop offset="0%" stop-color="#f8f1dc"/>
-            <stop offset="70%" stop-color="#f1e5c8"/>
-            <stop offset="100%" stop-color="#e6d6ae"/>
-          </radialGradient>
-          <linearGradient id="ringGrad" x1="0" y1="0" x2="1" y2="1">
-            <stop offset="0%" stop-color="#b3402f"/>
-            <stop offset="55%" stop-color="#93291f"/>
-            <stop offset="100%" stop-color="#7a1f1a"/>
-          </linearGradient>
-          <!-- 回纹单元：周期24、高16 -->
-          <g id="meanderUnit" fill="none" stroke="#e8c97e" stroke-width="2.4" stroke-linecap="square">
-            <path d="M0 14 H24"/>
-            <path d="M4 14 V4 H20 V10 H10"/>
-          </g>
-          <!-- 祥云 -->
-          <g id="cloud" fill="none" stroke="#b3402f" stroke-width="3" stroke-linecap="round">
-            <path d="M2 26 q-2 -16 12 -16 q2 -12 15 -8 q10 -8 20 2 q12 -2 13 10 q8 6 2 14 H8 q-8 0 -6 -10 q2 -7 9 -4"/>
-            <path d="M18 30 h26" stroke-width="2" opacity=".7"/>
-          </g>
-        </defs>
-
-        <!-- 外金环 -->
-        <circle cx="300" cy="300" r="292" fill="#8a6f37"/>
-        <circle cx="300" cy="300" r="289" fill="none" stroke="#e3c57e" stroke-width="2"/>
-        <!-- 朱红环带 -->
-        <circle cx="300" cy="300" r="282" fill="url(#ringGrad)"/>
-        <!-- 回纹环（JS 生成环绕单元） -->
-        <g id="meanderRing"></g>
-        <!-- 金边分隔 -->
-        <circle cx="300" cy="300" r="216" fill="none" stroke="#e3c57e" stroke-width="3"/>
-        <circle cx="300" cy="300" r="210" fill="url(#discGrad)"/>
-        <circle cx="300" cy="300" r="210" fill="none" stroke="#b89b5e" stroke-width="1.5"/>
-        <!-- 内描边细线 -->
-        <circle cx="300" cy="300" r="200" fill="none" stroke="#c2a05a" stroke-width="1" stroke-dasharray="2 6" opacity=".8"/>
-
-        <!-- 顶部标题 -->
-        <text x="300" y="150" text-anchor="middle"
-              font-family="'Ma Shan Zheng','STKaiti','KaiTi',serif"
-              font-size="72" fill="#8c241d" letter-spacing="10">挪车</text>
-        <!-- 标题两侧装饰短线 -->
-        <g stroke="#9a7d3e" stroke-width="2">
-          <line x1="158" y1="132" x2="210" y2="132"/>
-          <line x1="390" y1="132" x2="442" y2="132"/>
-          <circle cx="148" cy="132" r="3.5" fill="#9a7d3e" stroke="none"/>
-          <circle cx="452" cy="132" r="3.5" fill="#9a7d3e" stroke="none"/>
-        </g>
-
-        <!-- 篆刻小印章 -->
-        <g transform="translate(388,96) rotate(6)">
-          <rect x="0" y="0" width="44" height="44" rx="4" fill="#b03a2e"/>
-          <rect x="4" y="4" width="36" height="36" rx="2" fill="none" stroke="#f3e3c2" stroke-width="1.6"/>
-          <text x="22" y="31" text-anchor="middle" font-family="'Ma Shan Zheng','STKaiti',serif"
-                font-size="22" fill="#f3e3c2">安</text>
-        </g>
-
-        <!-- 题注（标题正下方，圆盘浅色区内） -->
-        <text x="300" y="172" text-anchor="middle"
-              font-family="'Noto Serif SC',serif"
-              font-size="14" fill="#8a7550" letter-spacing="3">临时停靠　敬请谅解</text>
-
-        <!-- 二维码开窗（直角方形白底，与二维码形状一致） -->
-        <g>
-          <rect x="172" y="182" width="256" height="256" rx="0" fill="#fffdf6" stroke="#b89b5e" stroke-width="2.5"/>
-          <!-- 四角角花 -->
-          <g fill="none" stroke="#b3402f" stroke-width="2.5" stroke-linecap="round">
-            <path d="M186 208 V194 H200"/>
-            <path d="M414 208 V194 H400"/>
-            <path d="M186 412 V426 H200"/>
-            <path d="M414 412 V426 H400"/>
-          </g>
-          <!-- 二维码 canvas 由 JS 注入到 foreignObject -->
-          <foreignObject x="186" y="196" width="228" height="228">
-            <canvas xmlns="http://www.w3.org/1999/xhtml" id="qrCanvas" width="456" height="456"
-                    style="width:228px;height:228px;"></canvas>
-          </foreignObject>
-        </g>
-
-        <!-- 二维码下方提示文字（均在浅色圆盘 r=210 范围内） -->
-        <text x="300" y="464" text-anchor="middle"
-              font-family="'ZCOOL XiaoWei','STKaiti',serif"
-              font-size="25" fill="#3a2f22" letter-spacing="5">扫码联系车主</text>
-        <text x="300" y="491" text-anchor="middle"
-              font-family="'Noto Serif SC',serif" font-size="14.5" fill="#8c241d" letter-spacing="1">拨打电话 · 发送短信</text>
-
-        <!-- 祥云装饰（二维码左右两侧，位于浅色圆盘内） -->
-        <use href="#cloud" transform="translate(118,282) scale(.7)"/>
-        <use href="#cloud" transform="translate(482,282) scale(-.7,.7)"/>
-      </svg>
-    </div>
+  <div class="art-wrap">
+    <canvas id="art" width="2400" height="2400"></canvas>
   </div>
 
-  <!-- 配置面板 -->
   <aside class="panel">
-    <h1>挪车牌 · 制作</h1>
-    <div class="sub">瑞 气 盈 门 · 出 入 平 安</div>
+    <h1>卡通挪车牌</h1>
+    <div class="sub">圆 润 可 爱 · 色 彩 满 满</div>
 
     <div class="field">
       <label>车主手机号</label>
       <input type="tel" id="phoneInput" maxlength="11" placeholder="请输入 11 位手机号" value="13800138000">
-      <div class="hint">扫码人点击按钮即可拨号或发短信，手机号不会明文印在牌上。</div>
+      <div class="hint">填入下方虚拟小号后，此真实号码不会出现在二维码与落地页中。</div>
     </div>
-
     <div class="field">
-      <label>短信预填内容</label>
-      <textarea id="smsInput">您好，您的爱车临时停靠影响通行，麻烦方便时挪一下车，谢谢！</textarea>
+      <label>隐私虚拟小号（选填，推荐）</label>
+      <input type="tel" id="prvInput" maxlength="11" placeholder="填入 11 位虚拟小号，如 170xxxxxxxx">
+      <div class="hint">在「阿里小号」App 或运营商小号服务（移动「和多号」等）开通一个虚拟号填到这里。扫码人拨打/发短信的都是小号，由运营商自动转接到你真实手机，对方看不到真实号码。</div>
     </div>
-
     <div class="field">
-      <label>落地页地址（部署后的网址）</label>
+      <label>短信预填内容（选填）</label>
+      <textarea id="smsInput" placeholder="留空则使用默认文案「您好，麻烦挪一下车，谢谢！」——二维码只编码手机号，码点更大、更好扫"></textarea>
+    </div>
+    <div class="field">
+      <label>落地页地址（部署后的公网网址）</label>
       <input type="text" id="baseUrlInput" placeholder="留空则使用当前页面地址">
-      <div class="hint">正式使用需将本文件上传到任意公网网页空间（如 GitHub Pages），手机扫码才能打开。</div>
+      <div class="hint">手机扫码必须能访问该网址。可使用已部署的 https://glp-s.github.io/move-car-qrcode/</div>
     </div>
 
-    <div class="btn-row">
-      <button class="btn btn-primary" id="genBtn">生成二维码</button>
-      <button class="btn btn-ghost" id="previewBtn">模拟扫码</button>
-    </div>
-    <div class="btn-row" style="margin-top:12px;">
-      <button class="btn btn-ghost" id="printBtn" style="flex:1;">打印 / 保存为图片</button>
-    </div>
-    <div class="btn-row" style="margin-top:12px;">
-      <button class="btn btn-primary" id="exportBtn" style="flex:1;">导出高清打印图 PNG</button>
-    </div>
-    <div class="hint" style="text-align:center;margin-top:8px;">2400×2400 像素 · 8 厘米 @300DPI · 白底</div>
+    <button class="btn btn-primary" id="genBtn">生成二维码</button>
+    <button class="btn btn-blue" id="exportBtn">导出高清打印图 PNG</button>
+    <div class="hint" style="text-align:center;">2400×2400 像素 · 8 厘米 @300DPI · 全彩</div>
 
-    <div class="deployment">
-      <b>使用方式：</b>生成二维码后，将圆形牌打印成不干胶或亚克力挂牌贴于车窗。他人微信/相机扫码后，会打开古典风格联系页，可选择<b>拨打电话</b>或<b>发送短信</b>。
+    <div class="tip-box">
+      二维码放大至画面 <b>80%</b>，暖棕圆点融入卡其底色，中心为可爱小车图标，采用最高 H 级容错，扫码稳定。<br>
+      默认只把手机号编码进二维码（码点更大、更好扫）；短信文案留空时落地页自动使用默认话术。<br>
+      想隐藏真实号码？填入虚拟小号即可——二维码只编码小号，来电短信自动转接，真实号码全程保密。<br>
+      流程：输入手机号 → 生成 → 导出 PNG → 发给打印店制作方形贴纸/挂牌。
     </div>
   </aside>
 </div>
 
-<!-- ================= 扫码落地页 ================= -->
+<!-- ============ 扫码落地页（卡通） ============ -->
 <div class="landing" id="landing">
-  <div class="phone-card">
-    <div class="landing-seal">挪<br>车</div>
-    <div class="landing-title">临停敬告</div>
-    <div class="landing-desc">
-      给您出行带来不便，深表歉意
-      <span class="phone-num" id="maskedPhone"></span>
-    </div>
-    <a class="action-btn action-call" id="callLink" href="#">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+  <div class="l-card">
+    <div class="l-inner">
+      <svg class="l-car" viewBox="0 0 300 192">
+        <ellipse cx="150" cy="178" rx="120" ry="12" fill="#e0cba6"/>
+        <circle cx="78" cy="150" r="30" fill="#4a3320"/><circle cx="78" cy="150" r="15" fill="#e3ab68"/>
+        <circle cx="222" cy="150" r="30" fill="#4a3320"/><circle cx="222" cy="150" r="15" fill="#e3ab68"/>
+        <rect x="30" y="92" width="240" height="66" rx="32" fill="#a9733a"/>
+        <rect x="84" y="36" width="132" height="66" rx="30" fill="#a9733a"/>
+        <rect x="98" y="48" width="104" height="42" rx="20" fill="#f3e3c8"/>
+        <circle cx="238" cy="120" r="10" fill="#fff0c2"/>
+        <circle cx="62" cy="120" r="8" fill="#b0402c"/>
       </svg>
-      拨打电话
-    </a>
-    <a class="action-btn action-sms" id="smsLink" href="#">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-      </svg>
-      发送短信
-    </a>
-    <div class="landing-foot">瑞气盈门 · 出入平安</div>
-  </div>
-</div>
-
-<!-- ================= 模拟扫码弹层 ================= -->
-<div class="modal-mask" id="modal">
-  <div style="position:relative;">
-    <button class="modal-close" id="modalClose">×</button>
-    <div class="phone-frame">
-      <div class="phone-screen" id="modalScreen"></div>
+      <div class="l-title">临时停靠</div>
+      <div class="l-desc">给您出行带来不便，深表歉意</div>
+      <div class="l-num" id="maskedPhone"></div>
+      <div class="l-prv" id="prvNote" style="display:none;">
+        <svg viewBox="0 0 24 24" width="15" height="15"><path d="M12 2l8 3.2V11c0 4.8-3.3 8.3-8 10.8C7.3 19.3 4 15.8 4 11V5.2z" fill="#a9733a"/><path d="M10.7 14.4l-2.5-2.5 1.3-1.3 1.2 1.2 3.6-3.6 1.3 1.3z" fill="#fdf8ee"/></svg>
+        虚拟号转接 · 车主真实号码全程保密
+      </div>
+      <a class="l-btn l-call" id="callLink" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        拨打电话
+      </a>
+      <a class="l-btn l-sms" id="smsLink" href="#">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        发送短信
+      </a>
+      <div class="l-foot">圆润可爱 · 出入平安</div>
     </div>
-    <div class="modal-tip">— 手机扫码后将看到此页面 —</div>
   </div>
 </div>
 
 <script>
 (function(){
-  "use strict";
+"use strict";
 
-  /* ---------- 回纹环生成 ---------- */
-  (function makeMeander(){
-    var ring = document.getElementById('meanderRing');
-    var NS = 'http://www.w3.org/2000/svg';
-    var count = 62, step = 360 / count;
-    for(var i=0;i<count;i++){
-      var use = document.createElementNS(NS,'use');
-      use.setAttributeNS('http://www.w3.org/1999/xlink','href','#meanderUnit');
-      use.setAttribute('href','#meanderUnit');
-      // 旋转到圆周，条带中心半径约 250
-      use.setAttribute('transform','rotate('+(i*step)+' 300 300) translate(288 43)');
-      ring.appendChild(use);
-    }
-  })();
+/* ---------- 落地页模式 ---------- */
+var params = new URLSearchParams(location.search);
+var pPhone = params.get('p');
+var pSms = params.get('s') || '您好，麻烦挪一下车，谢谢！';
+var pPrv = params.get('prv') === '1';
+function maskPhone(p){ return p.replace(/^(\d{3})\d{4}(\d{4})$/,'$1****$2'); }
+if(pPhone && /^1\d{10}$/.test(pPhone)){
+  document.getElementById('studio').style.display='none';
+  document.getElementById('landing').style.display='flex';
+  document.getElementById('maskedPhone').textContent = maskPhone(pPhone);
+  document.getElementById('callLink').href = 'tel:'+pPhone;
+  document.getElementById('smsLink').href = 'sms:'+pPhone+'?body='+encodeURIComponent(pSms);
+  if(pPrv) document.getElementById('prvNote').style.display = 'flex';
+  return;
+}
 
-  /* ---------- 落地页识别 ---------- */
-  var params = new URLSearchParams(location.search);
-  var pPhone = params.get('p');
-  var pSms = params.get('s') || '您好，麻烦挪一下车，谢谢！';
+/* ---------- 工作台 ---------- */
+var $ = function(id){ return document.getElementById(id); };
+var canvas = $('art'), ctx = canvas.getContext('2d');
+var S = 2400;
 
-  function maskPhone(p){
-    return p.replace(/^(\d{3})\d{4}(\d{4})$/, '$1****$2');
-  }
+function rr(x,y,w,h,r){
+  r = Math.min(r, w/2, h/2);
+  ctx.beginPath();
+  ctx.moveTo(x+r,y);
+  ctx.arcTo(x+w,y,x+w,y+h,r);
+  ctx.arcTo(x+w,y+h,x,y+h,r);
+  ctx.arcTo(x,y+h,x,y,r);
+  ctx.arcTo(x,y,x+w,y,r);
+  ctx.closePath();
+}
 
-  if(pPhone && /^1\d{10}$/.test(pPhone)){
-    document.getElementById('studio').style.display = 'none';
-    var landing = document.getElementById('landing');
-    landing.style.display = 'flex';
-    document.getElementById('maskedPhone').textContent = maskPhone(pPhone);
-    document.getElementById('callLink').href = 'tel:' + pPhone;
-    document.getElementById('smsLink').href = 'sms:' + pPhone + '?body=' + encodeURIComponent(pSms);
-    return; // 落地页模式，不初始化工作台逻辑
-  }
+/* 二维码暖色渐变：深茶棕 → 焦糖棕 → 茶色（三档均显著深于米底，保证自动二值化稳定可扫） */
+var C_STOPS = [[93,58,30],[124,80,42],[143,92,48]];
+function dotColor(t){
+  t = Math.max(0,Math.min(1,t));
+  var a,b,k;
+  if(t<.5){ a=C_STOPS[0]; b=C_STOPS[1]; k=t/.5; }
+  else { a=C_STOPS[1]; b=C_STOPS[2]; k=(t-.5)/.5; }
+  return 'rgb('+Math.round(a[0]+(b[0]-a[0])*k)+','+Math.round(a[1]+(b[1]-a[1])*k)+','+Math.round(a[2]+(b[2]-a[2])*k)+')';
+}
 
-  /* ---------- 工作台逻辑 ---------- */
-  var $ = function(id){ return document.getElementById(id); };
-  var phoneInput = $('phoneInput'), smsInput = $('smsInput'), baseUrlInput = $('baseUrlInput');
-
-  function buildLandingUrl(){
-    var phone = phoneInput.value.replace(/\D/g,'');
-    var base = baseUrlInput.value.trim().replace(/[?#].*$/,'');
-    if(!base){
-      base = location.href.split('#')[0].split('?')[0];
-    }
-    var url = base + (base.indexOf('?')>-1 ? '&' : '?') + 'p=' + phone;
-    if(smsInput.value.trim()){
-      url += '&s=' + encodeURIComponent(smsInput.value.trim());
-    }
-    return url;
-  }
-
-  function renderQR(cb){
-    var phone = phoneInput.value.replace(/\D/g,'');
-    var canvas = $('qrCanvas');
-    if(!/^1\d{10}$/.test(phone)){
-      alert('请输入正确的 11 位手机号');
-      return;
-    }
-    var text = buildLandingUrl();
-    if(!window.qrcode){
-      alert('二维码组件未正常加载，请使用现代浏览器重新打开本文件');
-      return;
-    }
-    // qrcode-generator：typeNumber=0 自动选择版本
-    var qr = qrcode(0, 'M');
-    qr.addData(text);
-    qr.make();
-    var count = qr.getModuleCount();
-    var margin = 2;                                  // 静区（模块数）
-    var cell = Math.floor(456 / (count + margin*2)); // 每模块像素
-    var total = cell * (count + margin*2);
-    var offset = Math.floor((456 - total) / 2);
-    var ctx = canvas.getContext('2d');
-    ctx.fillStyle = '#ffffff';
-    ctx.fillRect(0, 0, 456, 456);
-    ctx.fillStyle = '#2c2620';
-    for(var r=0; r<count; r++){
-      for(var c=0; c<count; c++){
-        if(qr.isDark(r, c)){
-          ctx.fillRect(offset + (c+margin)*cell, offset + (r+margin)*cell, cell, cell);
-        }
-      }
-    }
-    if(cb) cb();
-  }
-
-  $('genBtn').addEventListener('click', function(){ renderQR(); });
-  phoneInput.addEventListener('input', function(){
-    this.value = this.value.replace(/\D/g,'');
+/* ===== 场景元素（暖色卡其/茶色） ===== */
+function drawSky(){
+  var g = ctx.createLinearGradient(0,0,0,S);
+  g.addColorStop(0,'#f8eeda'); g.addColorStop(.55,'#f3e3c4'); g.addColorStop(1,'#ecd9b4');
+  ctx.fillStyle=g; ctx.fillRect(0,0,S,S);
+  // 淡雅波点（浅卡其，不与码点争视觉）
+  var dots=[[150,560,40],[210,1120,26],[120,1720,34],[2230,520,30],[2280,1080,42],[2160,1760,26],[300,2250,28],[2120,2280,34]];
+  dots.forEach(function(d){
+    ctx.beginPath();ctx.arc(d[0],d[1],d[2],0,7);ctx.fillStyle='rgba(200,168,120,.28)';ctx.fill();
   });
-  phoneInput.addEventListener('blur', function(){ renderQR(); });
-  smsInput.addEventListener('change', function(){ renderQR(); });
+}
 
-  $('printBtn').addEventListener('click', function(){ window.print(); });
-
-  /* ---------- 高清 PNG 导出（2400x2400 = 8cm @300DPI，白底） ---------- */
-  function blobToDataURL(blob){
-    return new Promise(function(res, rej){
-      var fr = new FileReader();
-      fr.onload = function(){ res(fr.result); };
-      fr.onerror = rej;
-      fr.readAsDataURL(blob);
-    });
+function drawSun(){
+  var cx=2010, cy=300;
+  ctx.save(); ctx.translate(cx,cy);
+  // 柔和杏色光晕
+  var rg=ctx.createRadialGradient(0,0,40,0,0,260);
+  rg.addColorStop(0,'rgba(232,176,107,.55)');rg.addColorStop(1,'rgba(232,176,107,0)');
+  ctx.fillStyle=rg;ctx.beginPath();ctx.arc(0,0,260,0,7);ctx.fill();
+  for(var i=0;i<12;i++){
+    ctx.save(); ctx.rotate(i*Math.PI/6);
+    ctx.fillStyle='#e3ab68';
+    rr(0,-22,120,44,22); ctx.fill();
+    ctx.restore();
   }
+  ctx.beginPath(); ctx.arc(0,0,96,0,7); ctx.fillStyle='#dfa15b'; ctx.fill();
+  ctx.restore();
+}
 
-  // 把 Google 字体以旧 UA 取单文件 TTF 并内嵌进 SVG，保证栅格化时书法字体不丢
-  function embedFonts(svgClone){
-    var families = ['Ma Shan Zheng', 'ZCOOL XiaoWei'];
-    return families.reduce(function(chain, fam){
-      return chain.then(function(css){
-        var cssUrl = 'https://fonts.googleapis.com/css2?family=' + encodeURIComponent(fam) + '&display=swap';
-        return fetch(cssUrl, {headers:{'User-Agent':'Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1)'}})
-          .then(function(r){ return r.text(); })
-          .then(function(text){
-            var urls = [];
-            text.replace(/url\(([^)]+)\)/g, function(m, u){ urls.push(u); return m; });
-            return urls.reduce(function(c, u){
-              return c.then(function(t){
-                return fetch(u).then(function(r){ return r.blob(); })
-                  .then(blobToDataURL)
-                  .then(function(d){ return t.replace(u, d); })
-                  .catch(function(){ return t; });
-              });
-            }, Promise.resolve(text));
-          })
-          .then(function(t){ return css + '\n' + t; })
-          .catch(function(){ return css; });
-      });
-    }, Promise.resolve('')).then(function(css){
-      if(css){
-        var st = document.createElementNS('http://www.w3.org/2000/svg','style');
-        st.setAttribute('type','text/css');
-        st.textContent = css;
-        svgClone.insertBefore(st, svgClone.firstChild);
-      }
-    });
-  }
+function cloud(x,y,s){
+  ctx.save(); ctx.translate(x,y); ctx.scale(s,s);
+  ctx.fillStyle='rgba(253,247,235,.95)';
+  ctx.beginPath();
+  ctx.arc(0,10,56,0,7); ctx.arc(60,-18,72,0,7); ctx.arc(140,6,58,0,7);
+  ctx.arc(70,26,70,0,7);
+  ctx.fill();
+  rr(-60,10,260,56,28); ctx.fill();
+  ctx.restore();
+}
 
-  function exportPNG(){
-    var btn = $('exportBtn');
-    var oldText = btn.textContent;
-    btn.textContent = '正在导出…';
-    btn.disabled = true;
-
-    var svg = document.querySelector('.plate-svg');
-    var clone = svg.cloneNode(true);
-    clone.setAttribute('width','600');
-    clone.setAttribute('height','600');
-    clone.removeAttribute('class');
-
-    // 用已渲染二维码位图替换 foreignObject（独立 SVG 文档无法执行其中内容）
-    var qrData = $('qrCanvas').toDataURL('image/png');
-    var fo = clone.querySelector('foreignObject');
-    var imgEl = document.createElementNS('http://www.w3.org/2000/svg','image');
-    imgEl.setAttribute('x','186'); imgEl.setAttribute('y','196');
-    imgEl.setAttribute('width','228'); imgEl.setAttribute('height','228');
-    imgEl.setAttributeNS('http://www.w3.org/1999/xlink','href', qrData);
-    imgEl.setAttribute('href', qrData);
-    fo.parentNode.replaceChild(imgEl, fo);
-
-    embedFonts(clone).then(function(){
-      var xml = new XMLSerializer().serializeToString(clone);
-      var svgBlob = new Blob(['<?xml version="1.0" encoding="UTF-8"?>\n' + xml],
-                              {type:'image/svg+xml;charset=utf-8'});
-      var url = URL.createObjectURL(svgBlob);
-      var im = new Image();
-      im.onload = function(){
-        var S = 2400;
-        var c = document.createElement('canvas');
-        c.width = S; c.height = S;
-        var ctx = c.getContext('2d');
-        ctx.fillStyle = '#ffffff';
-        ctx.fillRect(0, 0, S, S);
-        ctx.drawImage(im, 0, 0, S, S);
-        URL.revokeObjectURL(url);
-        c.toBlob(function(blob){
-          var a = document.createElement('a');
-          a.href = URL.createObjectURL(blob);
-          a.download = '挪车牌打印图_8cm_300dpi.png';
-          document.body.appendChild(a);
-          a.click();
-          a.remove();
-          setTimeout(function(){ URL.revokeObjectURL(a.href); }, 4000);
-          btn.textContent = oldText;
-          btn.disabled = false;
-        }, 'image/png');
-      };
-      im.onerror = function(){
-        URL.revokeObjectURL(url);
-        btn.textContent = oldText;
-        btn.disabled = false;
-        alert('导出失败，请重试或使用“打印 / 保存为图片”');
-      };
-      im.src = url;
-    });
-  }
-
-  $('exportBtn').addEventListener('click', exportPNG);
-
-  /* 模拟扫码弹层：复刻落地页 DOM */
-  $('previewBtn').addEventListener('click', function(){
-    var phone = phoneInput.value.replace(/\D/g,'');
-    if(!/^1\d{10}$/.test(phone)){ alert('请输入正确的 11 位手机号'); return; }
-    var sms = smsInput.value.trim() || '您好，麻烦挪一下车，谢谢！';
-    var html =
-      '<div style="padding:34px 24px 26px;text-align:center;background:linear-gradient(180deg,#f8f1dd,#efe3c4);min-height:100%;">' +
-        '<div style="position:absolute;inset:22px;border:1px solid rgba(154,125,62,.5);border-radius:14px;pointer-events:none;"></div>' +
-        '<div style="width:66px;height:66px;margin:0 auto 12px;border-radius:10px;background:linear-gradient(145deg,#b8402f,#8e2620);display:flex;align-items:center;justify-content:center;font-family:Ma Shan Zheng,serif;font-size:30px;color:#f6e7c8;line-height:1.05;box-shadow:0 8px 20px rgba(140,35,28,.4);transform:rotate(-4deg);">挪<br>车</div>' +
-        '<div style="font-family:Ma Shan Zheng,STKaiti,serif;font-size:34px;color:#8c241d;letter-spacing:6px;">临停敬告</div>' +
-        '<div style="font-size:13px;color:#6f5f42;letter-spacing:2px;margin:12px 0 8px;line-height:1.8;">给您出行带来不便，深表歉意</div>' +
-        '<div style="font-size:21px;font-weight:700;letter-spacing:3px;color:#2c2620;margin-bottom:26px;">' + maskPhone(phone) + '</div>' +
-        '<a href="tel:'+phone+'" style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:15px;border-radius:12px;text-decoration:none;font-size:17px;letter-spacing:4px;font-weight:700;background:linear-gradient(180deg,#b3402f,#8f2922);color:#fbeeda;margin-bottom:12px;box-shadow:0 8px 20px rgba(140,35,28,.35);font-family:inherit;">拨打电话</a>' +
-        '<a href="sms:'+phone+'?body='+encodeURIComponent(sms)+'" style="display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:15px;border-radius:12px;text-decoration:none;font-size:17px;letter-spacing:4px;font-weight:700;background:linear-gradient(180deg,#fbf4e2,#f0e3c2);color:#8c241d;border:1.5px solid #b89b5e;font-family:inherit;">发送短信</a>' +
-        '<div style="margin-top:20px;font-size:11px;color:#9a875f;letter-spacing:3px;">瑞气盈门 · 出入平安</div>' +
-      '</div>';
-    $('modalScreen').innerHTML = html;
-    $('modalScreen').style.position = 'relative';
-    $('modal').classList.add('show');
+function drawGround(){
+  // 暖色沙丘波浪（替代绿色草地）
+  ctx.fillStyle='#e6cf9f';
+  ctx.beginPath(); ctx.moveTo(0,1880);
+  ctx.quadraticCurveTo(500,1800,1000,1870); ctx.quadraticCurveTo(1700,1950,2400,1850);
+  ctx.lineTo(2400,2400); ctx.lineTo(0,2400); ctx.fill();
+  var g=ctx.createLinearGradient(0,1950,0,2400);
+  g.addColorStop(0,'#dcc08c'); g.addColorStop(1,'#cfab72');
+  ctx.fillStyle=g;
+  ctx.beginPath(); ctx.moveTo(0,2000);
+  ctx.quadraticCurveTo(700,1930,1300,2010); ctx.quadraticCurveTo(1900,2070,2400,1990);
+  ctx.lineTo(2400,2400); ctx.lineTo(0,2400); ctx.fill();
+  // 暖色小点缀（焦糖点、米白花、茶星）
+  var dots=[[170,2180,'#c08a4e'],[360,2300,'#b97f48'],[2080,2260,'#c08a4e'],[2250,2150,'#fdf7eb'],[520,2120,'#fdf7eb'],[1900,2120,'#b97f48']];
+  dots.forEach(function(d){
+    ctx.beginPath();ctx.arc(d[0],d[1],20,0,7);ctx.fillStyle=d[2];ctx.fill();
   });
-  $('modalClose').addEventListener('click', function(){ $('modal').classList.remove('show'); });
-  $('modal').addEventListener('click', function(e){ if(e.target === this) this.classList.remove('show'); });
+}
 
-  // 首次渲染
-  renderQR();
+function star(cx,cy,r,color,rot){
+  ctx.save();ctx.translate(cx,cy);ctx.rotate(rot||0);
+  ctx.beginPath();
+  for(var i=0;i<10;i++){
+    var rad=i%2? r*.45 : r;
+    var a=i*Math.PI/5 - Math.PI/2;
+    ctx[i?'lineTo':'moveTo'](Math.cos(a)*rad, Math.sin(a)*rad);
+  }
+  ctx.closePath();ctx.fillStyle=color;ctx.fill();ctx.restore();
+}
+/* 隐私保护盾牌徽章（暖棕盾 + 米白对勾） */
+function shieldBadge(cx,cy,s){
+  ctx.save();ctx.translate(cx,cy);ctx.scale(s/100,s/100);
+  ctx.beginPath();
+  ctx.moveTo(0,-46);
+  ctx.bezierCurveTo(24,-40,40,-36,48,-32);
+  ctx.lineTo(48,4);
+  ctx.bezierCurveTo(48,32,26,46,0,56);
+  ctx.bezierCurveTo(-26,46,-48,32,-48,4);
+  ctx.lineTo(-48,-32);
+  ctx.bezierCurveTo(-40,-36,-24,-40,0,-46);
+  ctx.closePath();
+  ctx.fillStyle='#a9733a';ctx.fill();
+  ctx.strokeStyle='#8a5a35';ctx.lineWidth=6;ctx.stroke();
+  ctx.strokeStyle='#fdf8ee';ctx.lineWidth=13;ctx.lineCap='round';ctx.lineJoin='round';
+  ctx.beginPath();ctx.moveTo(-19,2);ctx.lineTo(-5,17);ctx.lineTo(22,-14);ctx.stroke();
+  ctx.restore();
+}
+function heart(cx,cy,s,color){
+  ctx.save();ctx.translate(cx,cy);ctx.scale(s,s);
+  ctx.beginPath();
+  ctx.moveTo(0,22);
+  ctx.bezierCurveTo(-40,-10,-22,-38,0,-14);
+  ctx.bezierCurveTo(22,-38,40,-10,0,22);
+  ctx.fillStyle=color;ctx.fill();ctx.restore();
+}
+
+/* ===== 小车（侧面） ===== */
+function wheel(cx,cy){
+  ctx.save();ctx.translate(cx,cy);
+  ctx.beginPath();ctx.arc(0,0,170,0,7);ctx.fillStyle='#4b4557';ctx.fill();
+  ctx.beginPath();ctx.arc(0,0,140,0,7);ctx.fillStyle='#5d5670';ctx.fill();
+  ctx.beginPath();ctx.arc(0,0,98,0,7);ctx.fillStyle='#ffe28a';ctx.fill();
+  ctx.beginPath();ctx.arc(0,0,58,0,7);ctx.fillStyle='#f4f7ff';ctx.fill();
+  for(var i=0;i<5;i++){
+    var a=i*2*Math.PI/5;
+    ctx.beginPath();ctx.arc(Math.cos(a)*38,Math.sin(a)*38,11,0,7);ctx.fillStyle='#ffb703';ctx.fill();
+  }
+  ctx.beginPath();ctx.arc(0,0,18,0,7);ctx.fillStyle='#ffb703';ctx.fill();
+  ctx.restore();
+}
+
+function drawCar(){
+  var cx=1200;
+  // 地面阴影
+  ctx.fillStyle='rgba(60,90,60,.22)';
+  ctx.beginPath();ctx.ellipse(cx,1908,1030,66,0,0,7);ctx.fill();
+
+  // 轮子（先画，车身盖住上半）
+  wheel(660,1730); wheel(1740,1730);
+
+  // 车身 + 车顶一体轮廓
+  var bg=ctx.createLinearGradient(0,730,0,1820);
+  bg.addColorStop(0,'#ffb1cb'); bg.addColorStop(.5,'#ff7fa8'); bg.addColorStop(1,'#ff4f86');
+  ctx.fillStyle=bg; ctx.strokeStyle='#e3477f'; ctx.lineWidth=12;
+  ctx.beginPath(); rr(380,1080,1640,740,190); ctx.fill(); ctx.stroke();
+  ctx.beginPath(); rr(680,730,1040,430,170); ctx.fill(); ctx.stroke();
+
+  // 轮眉
+  ctx.strokeStyle='#e3477f'; ctx.lineWidth=10;
+  ctx.beginPath(); ctx.arc(660,1730,186,Math.PI*.05,Math.PI*.95); ctx.stroke();
+  ctx.beginPath(); ctx.arc(1740,1730,186,Math.PI*.05,Math.PI*.95); ctx.stroke();
+
+  // 车窗
+  ctx.fillStyle='#dff3ff'; ctx.strokeStyle='#b6dcf3'; ctx.lineWidth=8;
+  ctx.beginPath(); rr(752,802,896,272,120); ctx.fill(); ctx.stroke();
+  ctx.strokeStyle='#9fcdeb'; ctx.lineWidth=7;
+  ctx.beginPath(); ctx.moveTo(1200,812); ctx.lineTo(1200,1064); ctx.stroke();
+  // 车窗高光
+  ctx.strokeStyle='rgba(255,255,255,.8)'; ctx.lineWidth=10;
+  ctx.beginPath(); ctx.arc(980,900,46,Math.PI*1.1,Math.PI*1.6); ctx.stroke();
+  ctx.beginPath(); ctx.arc(1380,900,46,Math.PI*1.1,Math.PI*1.6); ctx.stroke();
+  // 萌萌脸
+  ctx.fillStyle='#44324a';
+  ctx.beginPath();ctx.arc(1050,922,24,0,7);ctx.arc(1350,922,24,0,7);ctx.fill();
+  ctx.fillStyle='#fff';
+  ctx.beginPath();ctx.arc(1058,914,8,0,7);ctx.arc(1358,914,8,0,7);ctx.fill();
+  ctx.strokeStyle='#44324a';ctx.lineWidth=9;ctx.lineCap='round';
+  ctx.beginPath();ctx.arc(1200,952,40,.15*Math.PI,.85*Math.PI);ctx.stroke();
+
+  // 车灯
+  ctx.fillStyle='#fff6c8';ctx.strokeStyle='#e8c95a';ctx.lineWidth=6;
+  ctx.beginPath();ctx.ellipse(1936,1300,44,32,0,0,7);ctx.fill();ctx.stroke();
+  ctx.fillStyle='#ff5252';
+  ctx.beginPath();ctx.ellipse(452,1300,30,24,0,0,7);ctx.fill();
+  // 车身高光线
+  ctx.strokeStyle='rgba(255,255,255,.55)';ctx.lineWidth=10;ctx.lineCap='round';
+  ctx.beginPath();ctx.moveTo(560,1180);ctx.lineTo(900,1180);ctx.stroke();
+  ctx.beginPath();ctx.moveTo(1500,1180);ctx.lineTo(1840,1180);ctx.stroke();
+}
+
+/* 中心小车 logo（画在码内，暖棕小车） */
+function miniCarLogo(cx,cy,w){
+  var s=w/200;
+  ctx.save();ctx.translate(cx,cy);ctx.scale(s,s);
+  ctx.fillStyle='#fdf8ee';
+  ctx.beginPath();rr(-88,-88,176,176,40);ctx.fill();
+  ctx.strokeStyle='#b08968';ctx.lineWidth=12;
+  ctx.beginPath();rr(-88,-88,176,176,40);ctx.stroke();
+  // 小车（焦糖棕）
+  ctx.fillStyle='#8a5a35';
+  ctx.beginPath();rr(-60,-10,120,52,24);ctx.fill();
+  ctx.beginPath();rr(-28,-52,62,46,20);ctx.fill();
+  ctx.fillStyle='#f3e3c8';
+  ctx.beginPath();rr(-20,-44,46,30,12);ctx.fill();
+  // 笑脸
+  ctx.fillStyle='#4a3320';
+  ctx.beginPath();ctx.arc(-8,-28,4.5,0,7);ctx.arc(14,-28,4.5,0,7);ctx.fill();
+  // 车轮（深茶）
+  ctx.beginPath();ctx.arc(-34,46,17,0,7);ctx.arc(34,46,17,0,7);ctx.fillStyle='#4a3320';ctx.fill();
+  ctx.beginPath();ctx.arc(-34,46,8,0,7);ctx.arc(34,46,8,0,7);ctx.fillStyle='#e3ab68';ctx.fill();
+  ctx.restore();
+}
+
+/* ===== 美化二维码（圆点 + 彩色定位角 + 中心车标） ===== */
+function drawQR(qr, x, y, size){
+  var n=qr.getModuleCount();
+  var margin=4;
+  var cell=size/(n+margin*2);
+  var ox=x+margin*cell, oy=y+margin*cell;
+  function isFinder(r,c){
+    return (r<7&&c<7)||(r<7&&c>=n-7)||(r>=n-7&&c<7);
+  }
+  var cc=(n-1)/2, logoMask=4.6*cell;
+  var cxAll=ox+n*cell/2, cyAll=oy+n*cell/2;
+
+  ctx.fillStyle='#fbf4e4';
+  ctx.fillRect(x,y,size,size);
+
+  var gap=0;
+  for(var r=0;r<n;r++){
+    for(var c=0;c<n;c++){
+      if(!qr.isDark(r,c)) continue;
+      if(isFinder(r,c)) continue;
+      var px=ox+c*cell, py=oy+r*cell;
+      if(Math.abs(px+cell/2-cxAll)<logoMask && Math.abs(py+cell/2-cyAll)<logoMask) continue;
+      ctx.fillStyle=dotColor((c+r)/(2*n));
+      rr(px+gap,py+gap,cell-2*gap,cell-2*gap,cell*.3);
+      ctx.fill();
+    }
+  }
+  // 三个定位角（暖茶三色，圆角）
+  var eyes=[[0,0,'#5d3e22'],[n-7,0,'#6b4423'],[0,n-7,'#7a502c']];
+  eyes.forEach(function(e){
+    var ex=ox+e[0]*cell, ey=oy+e[1]*cell, es=7*cell;
+    ctx.fillStyle=e[2];
+    rr(ex,ey,es,es,es*.18); ctx.fill();
+    ctx.fillStyle='#fbf4e4';
+    rr(ex+es*.16,ey+es*.16,es*.68,es*.68,es*.16); ctx.fill();
+    ctx.fillStyle='#4a2f1a';
+    rr(ex+es*.31,ey+es*.31,es*.38,es*.38,es*.1); ctx.fill();
+  });
+  miniCarLogo(cxAll,cyAll,logoMask*1.92);
+}
+
+/* ===== 文案（暖茶色系） ===== */
+function drawTitle(){
+  // 顶部标题牌
+  ctx.save();
+  ctx.shadowColor='rgba(120,85,45,.25)';ctx.shadowBlur=28;ctx.shadowOffsetY=10;
+  ctx.fillStyle='#fdf8ee';
+  ctx.beginPath();rr(620,52,1160,214,107);ctx.fill();
+  ctx.restore();
+  ctx.strokeStyle='#b08968';ctx.lineWidth=9;
+  ctx.beginPath();rr(620,52,1160,214,107);ctx.stroke();
+  ctx.fillStyle='#6b4423';
+  ctx.font='148px "ZCOOL KuaiLe", sans-serif';
+  ctx.textAlign='center';ctx.textBaseline='middle';
+  ctx.fillText('扫码挪车',1200,162);
+  var cp=contactPhone();
+  if(cp.prv) shieldBadge(575,150,95); else star(575,150,38,'#d19a55',.4);
+  star(1825,150,38,'#d19a55',-.3);
+}
+
+function drawBottomText(){
+  ctx.textAlign='center';ctx.textBaseline='middle';
+  ctx.fillStyle='#6b4423';
+  ctx.font='700 52px "Noto Sans SC", sans-serif';
+  ctx.fillText('拨打电话 · 发送短信　|　临时停靠 敬请谅解',1200,2348);
+}
+
+/* ===== 大二维码面板（二维码本体 1920，占画面 80%） ===== */
+function drawBigPanel(qr){
+  var px=205, py=295, pw=1990, ph=1990;
+  // 面板阴影 + 米白圆角底
+  ctx.save();
+  ctx.shadowColor='rgba(110,75,40,.3)';ctx.shadowBlur=40;ctx.shadowOffsetY=14;
+  ctx.fillStyle='#fdf8ee';
+  ctx.beginPath();rr(px,py,pw,ph,96);ctx.fill();
+  ctx.restore();
+  ctx.strokeStyle='#b08968';ctx.lineWidth=11;
+  ctx.beginPath();rr(px,py,pw,ph,96);ctx.stroke();
+  // 四角暖色小星星（放在面板外侧，绝不侵入二维码静区）
+  star(px-22,py-22,40,'#d19a55',.35);
+  star(px+pw+22,py-22,40,'#c08a4e',-.2);
+  star(px-22,py+ph+22,40,'#c08a4e',.5);
+  star(px+pw+22,py+ph+22,40,'#d19a55',.1);
+  // 二维码（240,335,1920）
+  drawQR(qr, 240, 335, 1920);
+}
+
+/* ===== 主渲染 ===== */
+/* 联系号码：填了有效虚拟小号则用小号（隐私模式），否则用真实号码 */
+function contactPhone(){
+  var prv=$('prvInput').value.replace(/\D/g,'');
+  if(/^1\d{10}$/.test(prv)) return {num:prv,prv:true};
+  return {num:$('phoneInput').value.replace(/\D/g,''),prv:false};
+}
+
+function buildUrl(){
+  var cp=contactPhone();
+  var base=$('baseUrlInput').value.trim().replace(/[?#].*$/,'');
+  if(!base) base=location.href.split('#')[0].split('?')[0];
+  var url=base+(base.indexOf('?')>-1?'&':'?')+'p='+cp.num;
+  if(cp.prv) url+='&prv=1';
+  if($('smsInput').value.trim()) url+='&s='+encodeURIComponent($('smsInput').value.trim());
+  return url;
+}
+
+function render(){
+  if(!window.qrcode){ alert('二维码组件未加载'); return; }
+  var phone=contactPhone().num;
+  var qr=qrcode(0,'H');
+  qr.addData(/^1\d{10}$/.test(phone)?buildUrl():'https://glp-s.github.io/move-car-qrcode/?p='+phone);
+  qr.make();
+
+  drawSky();
+  drawSun();
+  cloud(250,250,.78);
+  drawGround();
+  drawTitle();
+  drawBigPanel(qr);
+  drawBottomText();
+  // 暖色小点缀
+  star(120,620,32,'rgba(192,138,78,.55)',.2);
+  star(2290,1080,38,'rgba(192,138,78,.5)',-.2);
+  heart(150,1300,.85,'rgba(209,154,85,.6)');
+  heart(2255,1330,.75,'rgba(209,154,85,.55)');
+}
+
+/* ---------- 事件 ---------- */
+function refresh(){
+  if(!/^1\d{10}$/.test(contactPhone().num)) return;
+  render();
+}
+$('genBtn').addEventListener('click',refresh);
+$('phoneInput').addEventListener('input',function(){ this.value=this.value.replace(/\D/g,''); });
+$('phoneInput').addEventListener('blur',refresh);
+$('prvInput').addEventListener('input',function(){ this.value=this.value.replace(/\D/g,''); });
+$('prvInput').addEventListener('change',refresh);
+$('smsInput').addEventListener('change',refresh);
+$('baseUrlInput').addEventListener('change',refresh);
+
+$('exportBtn').addEventListener('click',function(){
+  var btn=this, old=btn.textContent;
+  btn.textContent='正在导出…';btn.disabled=true;
+  document.fonts.ready.then(function(){
+    render();
+    canvas.toBlob(function(blob){
+      var a=document.createElement('a');
+      a.href=URL.createObjectURL(blob);
+      a.download='卡通挪车牌_8cm_300dpi.png';
+      document.body.appendChild(a);a.click();a.remove();
+      setTimeout(function(){URL.revokeObjectURL(a.href);},4000);
+      btn.textContent=old;btn.disabled=false;
+    },'image/png');
+  });
+});
+
+/* 首屏 */
+document.fonts.ready.then(render);
+render();
 })();
 </script>
 </body>
